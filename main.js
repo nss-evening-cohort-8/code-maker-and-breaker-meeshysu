@@ -3,28 +3,20 @@ const printToDom = (stringToPrint, divId) => {
     selectedDiv.innerHTML += stringToPrint;
 };
 
-const sentence = 'hello!'
-counter = 0;
+const sentence = 'hello!';
 
+
+let outputString = '';
 const makeMaker = () => {
-    const whatever = sentence.charCodeAt(0);
-    for (let i = 0; i < sentence.length; i++){
-        
-    }
-
+    outputString = '';
+    let sentence = document.getElementById('emptySpace').value.toLowerCase();
+for (let i = 0; i < sentence.length; i++) {
+    outputString += sentence.charCodeAt(0);
+    index = 0;
+} 
 }
+printToDom(makeMaker, 'emptySpace');
 
-
-// let outputString = '';
-// const makeMaker = () => {
-//     outputString = '';
-//     let sentence = document.getElementById('emptySpace').value.toLowerCase();
-// for (let i = 0; i < sentence.length; i++) {
-//     outputString += 'hello!'[sentence.charCodeAt(0)[sentence.charAt(counter)]];
-//     counter = 0;
-// } 
-// console.logt(makeMaker);
-// }
 
 // console.log('these characters make ' + sentence.charCodeAt(counter) + ' is equal to ' + sentence.charAt(counter))
 
