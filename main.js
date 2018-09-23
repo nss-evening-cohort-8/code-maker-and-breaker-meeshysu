@@ -5,17 +5,14 @@ const printToDom = (stringToPrint, divId) => {
 
 
 
-
-let outputString = '';
 const makeMaker = () => {
     outputString = '';
-
     let sentence = document.getElementById('inputElem').value;
-    let sentenceSplit = sentence.split(' ');
-for (let i = 0; i < sentence.length; i++) {
-    outputString = sentence.charCodeAt(i) + ",";
-    printToDom(outputString, 'emptySpace');
-} 
+    let sentenceMaker = sentence.split('');
+    for (let i = 0; i < sentenceMaker.length; i++) {
+        outputString = sentenceMaker.charCodeAt(i) + ",";
+        printToDom(outputString, 'emptySpace');
+    }
 }
 
 
@@ -31,8 +28,8 @@ const breakBreaker = () => {
 
 
 let submitButton = document.getElementById("submitMe");
-submitButton.addEventListener('click', function() {makeMaker()});
+submitButton.addEventListener('click', function () { makeMaker() });
 
 
 let submitButtonToo = document.getElementById('submitMeToo');
-submitButtonToo.addEventListener('click', function() {breakBreaker()});
+submitButtonToo.addEventListener('click', function () { breakBreaker() });
