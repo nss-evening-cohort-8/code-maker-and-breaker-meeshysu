@@ -9,8 +9,8 @@ const makeMaker = () => {
     outputString = '';
     let sentence = document.getElementById('inputElem').value;
     let sentenceMaker = sentence.split('');
-    for (let i = 0; i < sentenceMaker.length; i++) {
-        outputString = sentenceMaker.charCodeAt(i) + ",";
+    for (let i = 0; i < sentence.length; i++) {
+        outputString = sentence.charCodeAt(i) + ",";
         printToDom(outputString, 'emptySpace');
     }
 }
@@ -20,7 +20,7 @@ const breakBreaker = () => {
     sentenceString = ',';
     let sentence = document.getElementById('inputElem2').value;
     let sentenceBreaker = sentence.split(',');
-    for (let i = 0; i < sentenceBreaker.length; i++) {
+    for (let i = 0; i < sentence.length; i++) {
         sentenceString = String.fromCharCode(sentenceBreaker[i]);
         printToDom(sentenceString, 'alsoEmptySpace');
     }
