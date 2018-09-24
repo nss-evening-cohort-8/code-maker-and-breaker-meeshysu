@@ -4,6 +4,8 @@ This quiz was given to us in class to essentially test us on what we have learne
 
 # Screenshot
 
+![main_screenshot](MakerBreaker.png)
+
 # How to run this project
 
 1. Use npm to install http-server in your terminal if you have not already:
