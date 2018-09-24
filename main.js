@@ -10,7 +10,11 @@ const makeMaker = () => {
     let sentence = document.getElementById('inputElem').value;
     let sentenceMaker = sentence.split('');
     for (let i = 0; i < sentence.length; i++) {
-        outputString = sentence.charCodeAt(i) + ",";
+        if (i < (sentence.length - 1)) {          
+            outputString = sentence.charCodeAt(i) + ",";}
+            else {
+                outputString = sentence.charCodeAt(i); 
+            }
         printToDom(outputString, 'emptySpace');
     }
 }
